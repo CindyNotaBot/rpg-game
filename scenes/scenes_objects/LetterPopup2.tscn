@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://vstb31mlimf1"]
 
 [ext_resource type="Script" uid="uid://bgcaxtb4a4b7h" path="res://scenes/scenes_objects/letter_popup.gd" id="1_r6sqc"]
-[ext_resource type="Texture2D" uid="uid://bf2801og0wosf" path="res://scenes/scenes_objects/test_drawing.png" id="2_r6sqc"]
+[ext_resource type="Texture2D" uid="uid://82rlmnufvat" path="res://scenes/scenes_objects/night_drawing.png" id="2_r6sqc"]
 
 [node name="LetterPopup" type="CanvasLayer" unique_id=1504861793]
 script = ExtResource("1_r6sqc")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1091941988]
-anchors_preset = 15
+anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
@@ -19,12 +19,12 @@ color = Color(0, 0, 0, 0.5882353)
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 80.0
-offset_top = 40.0
-offset_right = -80.0
-offset_bottom = -40.0
+offset_left = 60.0
+offset_top = 60.0
+offset_right = -60.0
+offset_bottom = -60.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_r6sqc")
-expand_mode = 4
+expand_mode = 1
 stretch_mode = 5
