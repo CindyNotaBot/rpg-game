@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://82rlmnufvat" path="res://scenes/scenes_objects/night_drawing.png" id="2_r6sqc"]
 
 [node name="LetterPopup" type="CanvasLayer" unique_id=1504861793]
+layer = 20
+follow_viewport_scale = 0.001
 script = ExtResource("1_r6sqc")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1091941988]
@@ -26,5 +28,5 @@ offset_bottom = -60.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_r6sqc")
-expand_mode = 1
+expand_mode = 2
 stretch_mode = 5
