@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cbch7885yqq0a"]
+
+[ext_resource type="Texture2D" uid="uid://deqtdbmoc5mou" path="res://assets/game/Objects/Egg_item.png" id="1_cly5x"]
+[ext_resource type="Script" uid="uid://csfvhn5m3wku4" path="res://scenes/scenes_objects/treasure_egg.gd" id="1_qyy1k"]
+[ext_resource type="PackedScene" uid="uid://crbxpoo63ghpf" path="res://interaction_components/interactable.tscn" id="2_qyy1k"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7a0xh"]
+radius = 9.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_w5g1u"]
+
+[node name="Egg" type="StaticBody2D" unique_id=1760680702]
+script = ExtResource("1_qyy1k")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=177284857]
+texture = ExtResource("1_cly5x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1986021526]
+shape = SubResource("CircleShape2D_7a0xh")
+
+[node name="Interactable" parent="." unique_id=1985459096 instance=ExtResource("2_qyy1k")]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable" unique_id=584998766]
+shape = SubResource("CircleShape2D_w5g1u")

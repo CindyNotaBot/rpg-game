@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://chiqd5galjsev"]
+
+[ext_resource type="Texture2D" uid="uid://ppbno0ejs1o" path="res://scenes/scenes_objects/papsrtv2.jpg" id="1_us74m"]
+
+[node name="LetterPopup" type="CanvasLayer" unique_id=1504861793]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1091941988]
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.5882353)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=51212868]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_us74m")
