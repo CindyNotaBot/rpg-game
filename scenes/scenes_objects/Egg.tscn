@@ -19,7 +19,7 @@ texture = ExtResource("1_cly5x")
 shape = SubResource("CircleShape2D_7a0xh")
 
 [node name="Interactable" parent="." unique_id=1985459096 instance=ExtResource("2_qyy1k")]
-collision_mask = 2
+interact_name = "Click E to Open Egg"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable" unique_id=584998766]
 shape = SubResource("CircleShape2D_w5g1u")

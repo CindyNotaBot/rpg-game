@@ -6,7 +6,9 @@ var can_interact := true
 
 
 func _input(event: InputEvent) -> void:
+	print("input received")
 	if event.is_action_pressed("interact") and can_interact:
+		print("interact pressed!")
 		if current_interactions:
 			can_interact = false
 			interact_label.hide()
@@ -22,8 +24,12 @@ func _process(_delta:float) -> void:
 		if current_interactions[0].is_interactable: 
 			interact_label.text = current_interactions[0].interact_name
 			interact_label.show()
+			print("showing label: ", current_interactions[0].interact_name)
+		else:
+			print("is_interactable is false!")
 	else:
 		interact_label.hide()
+	
 		
 	
 func _sort_by_nearest(area1, area2):
@@ -33,8 +39,17 @@ func _sort_by_nearest(area1, area2):
 
 
 func _on_interact_range_area_entered(area: Area2D) -> void:
+	print("area entered: ", area.name)
 	current_interactions.push_back(area)
 
 
 func _on_interact_range_area_exited(area: Area2D) -> void:
+	print("area exited: ", area.name)
 	current_interactions.erase(area)
+	
+	
+func _ready():
+	print("interact_label found: ", interact_label != null)
+   
+	
+	

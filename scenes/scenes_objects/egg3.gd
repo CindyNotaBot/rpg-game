@@ -8,6 +8,6 @@ func _ready() -> void:
 
 func _on_interact():
 	print("egg interacted!")
-	var letter = preload("res://scenes/scenes_objects/LetterPopup.tscn").instantiate()
+	var letter = preload("res://scenes/scenes_objects/LetterPopup3.tscn").instantiate()
 	get_tree().current_scene.add_child(letter)
 	interactable.is_interactable = false
