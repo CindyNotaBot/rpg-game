@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dxbg0dq0mxleo"]
 
 [ext_resource type="Script" uid="uid://bgcaxtb4a4b7h" path="res://scenes/scenes_objects/letter_popup.gd" id="1_emkhm"]
-[ext_resource type="Texture2D" uid="uid://bf2801og0wosf" path="res://scenes/scenes_objects/test_drawing.png" id="2_lkxax"]
+[ext_resource type="Texture2D" uid="uid://b1tyylqp861kn" path="res://scenes/scenes_objects/letter2final.jpg" id="2_emkhm"]
 
 [node name="LetterPopup" type="CanvasLayer" unique_id=1504861793]
 script = ExtResource("1_emkhm")
@@ -25,6 +25,6 @@ offset_right = -80.0
 offset_bottom = -40.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_lkxax")
-expand_mode = 4
+texture = ExtResource("2_emkhm")
+expand_mode = 2
 stretch_mode = 5

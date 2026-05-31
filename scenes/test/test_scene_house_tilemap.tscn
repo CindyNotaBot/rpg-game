@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cbch7885yqq0a" path="res://scenes/scenes_objects/Egg.tscn" id="6_prer4"]
 [ext_resource type="Script" uid="uid://dk83aidoq8lar" path="res://scenes/scenes_objects/egg2.gd" id="8_ma3rl"]
 [ext_resource type="Script" uid="uid://cfvya3ycmvu27" path="res://scenes/scenes_objects/egg3.gd" id="9_gyvy4"]
+[ext_resource type="AudioStream" uid="uid://db4gqmin0jwdf" path="res://scenes/scenes_objects/M800003hsKJt1fLXuD.mp3" id="9_q4rv0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7gq22"]
 texture = ExtResource("2_7gq22")
@@ -492,12 +493,17 @@ y_sort_enabled = true
 position = Vector2(209, 126)
 
 [node name="Egg1" parent="game_tile_map" unique_id=1824001636 instance=ExtResource("6_prer4")]
-position = Vector2(465, 162)
+position = Vector2(208, 210)
 
 [node name="Egg2" parent="game_tile_map" unique_id=1760680702 instance=ExtResource("6_prer4")]
-position = Vector2(248, 181)
+position = Vector2(348, 335)
 script = ExtResource("8_ma3rl")
 
 [node name="Egg3" parent="game_tile_map" unique_id=2069837511 instance=ExtResource("6_prer4")]
-position = Vector2(144, 302)
+position = Vector2(465, 160)
 script = ExtResource("9_gyvy4")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=234849630]
+stream = ExtResource("9_q4rv0")
+volume_db = -10.0
+autoplay = true
